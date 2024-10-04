@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Position de départ, taille normale */
+  }
+  50% {
+    transform: scale(1.05); /* Zoom avant à 120% */
+  }
+  100% {
+    transform: scale(1); /* Retour à la taille normale */
+  }
+}
+ 
+  .shake {
+    animation: zoomInOut 0.8s ease-in-out infinite;
+  }
+ 
+  @keyframes fall {
+    from {
+      transform: translateY(-600px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
